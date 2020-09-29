@@ -1,0 +1,19 @@
+<view class="page">
+    
+    <view class="page__bd">
+        <view class="section section_gap">
+            <radio-group class="radio-group" bindchange="radioChange" >
+                <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" style="margin-left:30px" checked="{{item.checked}}">
+                    <text>{{item.value}}</text>
+                </radio>
+            </radio-group>
+        </view>
+    </view>
+</view>
+
+<view class="section" style="margin-top:10px">
+  
+    <textarea placeholder="请写你的评论" placeholder-style="color:red; font-size:12px;margin-left:20px" style="width:80%;margin-left:10%;padding:5px;font-size:12px;border:1px solid black"  value = "{{content}}" bindinput="textBind"/>
+    <button form-type="submit" bindtap="addComment" style="margin-top:15px;color:red;width:40%;margin-left:55%;font-size:12px"> 提交 </button>
+ 
+</view>

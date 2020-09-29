@@ -1,0 +1,23 @@
+.goods-des-info{
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.label-title{
+  font-size:28rpx;
+  color:#000000;
+  padding: 30rpx;
+}
+.goods-text{
+  padding: 0 10rpx;
+  font-size:28rpx;
+  color:#666666;
+  line-height: 56rpx;
+  margin-bottom: 30rpx;
+}
+.des-imgs{
+  width:100%;
+}
+.des-imgs image{
+  width: 100%;
+}

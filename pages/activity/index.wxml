@@ -1,0 +1,19 @@
+<!--pages/activity/index.wxml-->
+
+<view class="goods-des-info" style="margin-top:35rpx; position:relative" >
+       
+        <view class="goods-text" style="margin-top:15rpx;border-bottom:1px solid #eee;" wx:for="{{activity}}">
+          <view style="width:100rpx;float:left;">
+            <image style="width: 100rpx; height: 100rpx;" src="{{item.user.avatar_url}}"></image>
+            <view style="text-align:center;width:100rpx;color:red ">{{item.score}}</view>
+          </view>
+          <view style="width:550rpx;float:left;margin-left:35rpx;">
+            <view>{{item.content}}</view>
+            <view style="color: #B0B0B0;font-size:24rpx;">{{item.date}}</view>
+          </view>
+        </view>
+        <view class="goods-text" style="font-size:12px;margin-left:8px;marign-top:20px;" wx:if="{{!activity.length}}">
+          暂无活动
+        </view>
+        
+    </view>
